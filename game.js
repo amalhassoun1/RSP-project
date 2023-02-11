@@ -43,6 +43,8 @@ function game(){
     let computerCounter= 0;
     let playerCounter= 0;
     for(let i=0;i<5;i++){
+                let j=i+1;
+        console.log("round " + j);
         computerChoice= computerSelection();
         playerChoice= playerSelection();
         if(playRound(computerChoice,playerChoice)== "computer")

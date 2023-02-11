@@ -7,7 +7,7 @@ function computerSelection() {
 
 function playerSelection() {
     let playerOption = prompt('Type your Choice between (Rock,Scissors,Paper)');
-    let lowerCasePlayer = toLowerCase(playerOption);
+    let lowerCasePlayer = playerOption.toLowerCase();
     while(!(
         lowerCasePlayer === 'rock' ||
         lowerCasePlayer === 'scissors' ||
@@ -15,7 +15,7 @@ function playerSelection() {
     )){
         alert("invalid user input");
         playerOption = prompt('Invalid input Please try again');
-        lowerCasePlayer = toLowerCase(playerOption);
+        lowerCasePlayer = playerOption.toLowerCase();
     }
     return lowerCasePlayer;
   }
